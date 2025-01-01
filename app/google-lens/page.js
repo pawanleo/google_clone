@@ -9,7 +9,7 @@ import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 
-export default function GoogleLensContent() {
+ function GoogleLensContent() {
   const [activeTab, setActiveTab] = useState("search");
   const [uploadedImage, setUploadedImage] = useState(null);
   const componentRef = useRef(null);
