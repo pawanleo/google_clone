@@ -9,7 +9,7 @@ import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 
-export default function GoogleLens() {
+export default function GoogleLensContent() {
   const [activeTab, setActiveTab] = useState("search");
   const [uploadedImage, setUploadedImage] = useState(null);
   const componentRef = useRef(null);
@@ -144,5 +144,12 @@ export default function GoogleLens() {
         </div>
       </div>
     </div>
+  );
+}
+export default function GoogleLens() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <GoogleLensContent />
+    </Suspense>
   );
 }
