@@ -6,7 +6,7 @@ import ImageSourceIcon from "@/components/icons/ImageSourceIcon";
 import ImageGrid from "@/components/ImageGrid";
 import VisualSearch from "@/components/VisualSearch";
 import Image from "next/image";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 
  function GoogleLensContent() {
