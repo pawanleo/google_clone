@@ -10,13 +10,13 @@ export default function GoogleNavbar() {
   const router = useRouter();
   const handleClick = () => {
     // Navigate to the desired page
-    router.push("/google-lens");
+    router.push("/");
   };
   return (
     <div className="h-16 px-4 flex items-center justify-between border-b border-[#dadce0] bg-white">
       {/* Left side - Google logo */}
       <div className="flex items-center">
-        <div className="w-24 relative" onClick={handleClick}>
+        <div className="w-24 relative cursor-pointer" onClick={handleClick}>
           <Image
             src="/googlelogo_clr_74x24px.svg"
             alt="Google"
